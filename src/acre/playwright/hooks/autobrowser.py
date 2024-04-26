@@ -5,12 +5,12 @@ from acre.playwright import Browser
 
 
 @before.all(order=10)
-def open_browser_testrun(testrun):
+def open_browser_testrun(features, marker):
     _open_browser('testrun')
 
 
 @after.all(oder=10)
-def close_browser_testrun(testrun):
+def close_browser_testrun(features, marker):
     _close_browser('testrun')
 
 
