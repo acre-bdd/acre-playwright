@@ -11,6 +11,6 @@ from .hooks import playwright
 
 from .hooks import autobrowser
 
-import . import setup
+from . import setup
 
 setup.init()
