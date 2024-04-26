@@ -4,12 +4,12 @@ from acre.lib import settings
 from acre.playwright import Browser
 
 
-@before.each_testrun(order=10)
+@before.all(order=10)
 def open_browser_testrun(testrun):
     _open_browser('testrun')
 
 
-@after.each_testrun(oder=10)
+@after.all(oder=10)
 def close_browser_testrun(testrun):
     _close_browser('testrun')
 
