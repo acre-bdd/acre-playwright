@@ -12,3 +12,6 @@ from .hooks import playwright
 if settings.playwright.browser.auto:
     from .hooks import autobrowser
 
+import . import setup
+
+setup.init()
