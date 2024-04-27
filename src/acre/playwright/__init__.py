@@ -18,3 +18,4 @@ setup.init()
 
 import acre as _acre
 _acre.controls = importlib.import_module('.controls')
+importlib.reload(_acre.controls)
