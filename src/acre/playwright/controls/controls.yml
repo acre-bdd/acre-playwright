@@ -1,5 +1,7 @@
 acre.playwright:
   default:
+    XPControl:
+      attributes:
     Link:
       attributes:
         role: a
