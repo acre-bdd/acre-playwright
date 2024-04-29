@@ -1,0 +1,17 @@
+acre.playwright:
+  default:
+    Link:
+      attributes:
+        role: a
+    Input:
+      attributes:
+        role: input
+    Button:
+      attributes:
+        role: button
+    Heading:
+      attributes:
+        role: h1
+    Paragraph:
+      attributes:
+        role: p

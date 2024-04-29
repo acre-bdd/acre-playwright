@@ -28,9 +28,16 @@ class Control:
     def wait_for(self, *args, **kwargs):
         self.locator.wait_for(*args, **kwargs)
 
+    @property
+    def first(self):
+        return self.locator.first
+
+    def fill(self, text):
+        return self.locator.fill(text)
+
     def exists(self, *args, timeout=5000, **kwargs):
         try:
-            self.locator.first.wait_for(*args, timeout=timeout, **kwargs)
+            self.locator.wait_for(*args, timeout=timeout, **kwargs)
             return True
         except TimeoutError:
             return False
