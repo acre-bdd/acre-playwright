@@ -21,7 +21,7 @@ class XPControl(Control):
 
     @property
     def xpath(self):
-        args = self._config
+        args = self._config if self._config else {}
         if self._kwargs:
             args.update(self._kwargs)
         log.warning(f"xpath: {args}")
